@@ -1,0 +1,93 @@
+
+/* Boutons Login et Register*/
+.btnLog {
+    background-color: white;
+    color: black;
+    font-size: 14px ;
+    font-weight: 500;
+    font-family: Epilogue;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    border: white solid 2px;
+    position: relative;
+    left: 1300px;
+}
+.btnLog:hover{
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 10px ;
+    padding: 13px 20px 13px 20px;
+    cursor: pointer;
+}
+/*traiement image*/
+@font-face {
+    font-family: Epilogue;
+    src: url(./assets/font/Epilogue-VariableFont_wght.ttf);
+}
+.container {
+    display: flex ;
+}
+img {
+    width: 600px;
+    position: relative;
+    left: 750px ;
+}
+.content{
+    position: relative;
+    right: 450px;
+    width: 500px ;
+    font-family: Epilogue;
+}
+/* traitement de l'écrit*/
+h1{
+    font-size: 70px;
+}
+p{
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+    padding-bottom: 30px;
+    width: 350px;
+}
+/*Bouton Learn More*/
+.btn {
+    color: black;
+    background-color: white;
+    border: white solid 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    padding:17px 20px 17px 20px;
+    margin: 50px;
+}
+.btn:hover{
+    background-color: white;
+    border-radius: 15px ;
+    border: black solid 1px;
+    padding:17px 20px 17px 20px;
+    cursor: pointer;
+
+}
+/*logo bas de page*/
+.content img{
+    width : 70px ;
+    position: relative;
+    left : 30px ;
+    margin: 20px;
+}
+
+
+/*footer*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    font-family: Epilogue ;
+    font-weight: 500;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    font-weight: 500;
+}
+
