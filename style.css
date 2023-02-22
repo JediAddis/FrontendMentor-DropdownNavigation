@@ -1,9 +1,16 @@
+/*importation police d'écriture*/
+@font-face {
+    font-family: Epilogue;
+    src: url(./assets/font/Epilogue-VariableFont_wght.ttf);
+}
+/* couleur du site*/
 body{
     background-color: hsl(0, 0%, 98%);
+    font-family: Epilogue;
 }
 
 /* Modifications de la barre de navigation*/
-.topnav {
+.topNav {
     overflow: hidden;
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 41%);
@@ -11,95 +18,127 @@ body{
     display: flex;
     cursor: pointer;
     font-size: 14px;
+    gap: 1rem;
+    padding-top: 15px;
 }
-
-.featBtn, .compBtn{
-    float:left ;
-    overflow: hidden;
+.topNav a {
+    background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 41%);
-    font-family: Epilogue;
-    font-size: 14px;
-    border: none ;
-}
-.featBtn:hover, .compBtn:hover{
-    color: hsl(0, 0%, 8%);
     text-decoration: none;
-    cursor: pointer;
+    float: left;
+    display: block;
+}
+/*Bouton features*/
+.Features{
+    float:left
+}
+.Features .featBtn{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    font-size: 14px ;
+    font-family: Epilogue;
+    text-decoration: none;
+    border: none;
 }
 .features-content a{
-    color:hsl(0, 0%, 41%);
-    background-color: hsl(0, 0%, 98%);
+    background-color: white;
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
     font-family: Epilogue;
     text-decoration: none;
     text-align: center;
-    font-size: 14px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    display: block;
+    box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    display: none;
 }
-.topnav .featBtn .compBtn{
+.topNav:hover, .Features:hover, .featBtn:hover{
+    color: hsl(0, 0%, 8%);
+}
+.features-content a{
+    background-color: white;
     color: hsl(0, 0%, 41%);
-    background-color: hsl(0, 0%, 98%);
-    font-size: 14px;
-    font-family: Epilogue;
 }
-.featBtn .features-content{
+.Features .features-content{
     display: block;
+}
+/*Bouton company*/
+.Company{
+    float:left ; 
+}
+.Company .compBtn{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    font-size: 14px ;
+    font-family: Epilogue;
+    text-decoration: none;
+    border: none;
 }
 .company-content a{
-    text-decoration: none;
+    background-color: white;
     color: hsl(0, 0%, 41%);
-    background-color: hsl(0, 0%, 98%);
+    font-size: 14px;
+    font-family: Epilogue;
+    text-decoration: none;
     text-align: center;
+    box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    display: none;
+}
+.topNav:hover, .Company:hover, .compBtn:hover{
+    color: hsl(0, 0%, 8%);
+}
+.company-content a{
+    background-color: white;
+    color: hsl(0, 0%, 41%);
+}
+.Company .company-content{
+    display: block;
+}
+/*Boutons careers et about*/
+.Links{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
     font-family: Epilogue;
     font-size: 14px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.features-content:hover,.company-content:hover{
     text-decoration: none;
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(0, 0%, 41%);
+    display: flex;
 }
-.links a{
-    font-family: Epilogue;
-    text-decoration: none;
-    color: hsl(0, 0%, 41%);
-    text-align: center;
-    font-size: 14px;
+.Links a{
+    margin-right: 35% ;
 }
-.links a:hover{
-    font-family: Epilogue;
-    text-decoration: none;
-    color: hsl(0, 0%, 41%);
-    text-align: center;
+.Links a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.logo {
+    width:  5%;
+    height: 5%;
+    padding: 0 10px 0 10px ;
 }
 
 
 /* Boutons Login et Register*/
-.btnLog {
+.btnLog button {
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 8%);
     font-size: 14px ;
     font-weight: 500;
     font-family: Epilogue;
-    padding: 13px 20px 13px 20px;
     text-decoration: none;
     border: hsl(0, 0%, 98%) solid 2px;
+    padding : 10px 15px 10px 15px ;
     position: relative;
-    left: 1300px;
+    z-index: 1;
+    left : 900px;
 }
-.btnLog:hover{
+button:hover{
     background-color: hsl(0, 0%, 98%);
     border: hsl(0, 0%, 8%) solid 2px;
     border-radius: 10px ;
-    padding: 13px 20px 13px 20px;
     cursor: pointer;
+    padding : 10px 15px 10px 15px ;
 }
 /*traiement image*/
-@font-face {
-    font-family: Epilogue;
-    src: url(./assets/font/Epilogue-VariableFont_wght.ttf);
-}
+
 .container {
     display: flex ;
     justify-content: center;
@@ -162,3 +201,4 @@ p{
     font-weight: 500;
 }
 
+/*Responsive*/ 
