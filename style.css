@@ -1,20 +1,96 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* Modifications de la barre de navigation*/
+.topnav {
+    overflow: hidden;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.featBtn, .compBtn{
+    float:left ;
+    overflow: hidden;
+    color: hsl(0, 0%, 41%);
+    font-family: Epilogue;
+    font-size: 14px;
+    border: none ;
+}
+.featBtn:hover, .compBtn:hover{
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+    cursor: pointer;
+}
+.features-content a{
+    color:hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    font-family: Epilogue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: block;
+}
+.topnav .featBtn .compBtn{
+    color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    font-size: 14px;
+    font-family: Epilogue;
+}
+.featBtn .features-content{
+    display: block;
+}
+.company-content a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.features-content:hover,.company-content:hover{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+}
+.links a{
+    font-family: Epilogue;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
+    font-size: 14px;
+}
+.links a:hover{
+    font-family: Epilogue;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
+}
+
 
 /* Boutons Login et Register*/
 .btnLog {
-    background-color: white;
-    color: black;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
     font-size: 14px ;
     font-weight: 500;
     font-family: Epilogue;
     padding: 13px 20px 13px 20px;
     text-decoration: none;
-    border: white solid 2px;
+    border: hsl(0, 0%, 98%) solid 2px;
     position: relative;
     left: 1300px;
 }
 .btnLog:hover{
-    background-color: white;
-    border: black solid 2px;
+    background-color: hsl(0, 0%, 98%);
+    border: hsl(0, 0%, 8%) solid 2px;
     border-radius: 10px ;
     padding: 13px 20px 13px 20px;
     cursor: pointer;
@@ -26,15 +102,12 @@
 }
 .container {
     display: flex ;
+    justify-content: center;
 }
 img {
-    width: 600px;
-    position: relative;
-    left: 750px ;
-}
+    width: 500px;
+}  
 .content{
-    position: relative;
-    right: 450px;
     width: 500px ;
     font-family: Epilogue;
 }
@@ -52,9 +125,9 @@ p{
 }
 /*Bouton Learn More*/
 .btn {
-    color: black;
-    background-color: white;
-    border: white solid 1px;
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    border: hsl(0, 0%, 98%) solid 1px;
     font-size: 18px;
     text-decoration: none;
     font-weight: 700;
@@ -62,9 +135,9 @@ p{
     margin: 50px;
 }
 .btn:hover{
-    background-color: white;
+    background-color: hsl(0, 0%, 98%);
     border-radius: 15px ;
-    border: black solid 1px;
+    border: hsl(0, 0%, 8%) solid 1px;
     padding:17px 20px 17px 20px;
     cursor: pointer;
 
@@ -72,8 +145,6 @@ p{
 /*logo bas de page*/
 .content img{
     width : 70px ;
-    position: relative;
-    left : 30px ;
     margin: 20px;
 }
 
